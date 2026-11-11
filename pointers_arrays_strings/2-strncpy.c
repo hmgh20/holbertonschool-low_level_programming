@@ -12,13 +12,13 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	/* الخطوة 1: نسخ أحرف src حتى الوصول إلى n أو نهاية src */
+
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
 	}
 
-	/* الخطوة 2: ملء المساحة المتبقية (إن وجدت) بـ \0 */
+
 	for (; i < n; i++)
 	{
 		dest[i] = '\0';
